@@ -21,6 +21,7 @@ function getPlatformInfo() {
 var rootdir = findProjectRoot(process.cwd(), {
     maxDepth: 12
 });
+print_r('====',rootdir, '====');
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
