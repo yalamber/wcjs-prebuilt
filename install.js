@@ -21,7 +21,7 @@ function getPlatformInfo() {
 var rootdir = findProjectRoot(process.cwd(), {
     maxDepth: 12
 });
-console.log('====',rootdir, '====');
+rootdir = rootdir+'/app';
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
