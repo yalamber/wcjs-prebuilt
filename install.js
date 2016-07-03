@@ -176,6 +176,7 @@ function parseEnv() {
         else if (platform === 'darwin')
             platform = 'osx'
         if (manifest)
+            console.log(typeof(manifest.main));
             if (parsePath(manifest.main).extname === '.html') {
                 if (!process.env.WCJS_RUNTIME && !inf.runtime) runtime = 'nw';
             }
