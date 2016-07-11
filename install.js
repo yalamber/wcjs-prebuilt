@@ -21,6 +21,8 @@ function getPlatformInfo() {
 var rootdir = findProjectRoot(process.cwd(), {
     maxDepth: 12
 });
+//Fix for electron boiler plate apps
+//TODO: Find better way to handle this
 rootdir = rootdir+'/app';
 
 function capitalizeFirstLetter(string) {
